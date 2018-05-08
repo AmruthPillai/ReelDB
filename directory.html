@@ -52,8 +52,8 @@
             </div>
         </div>
 
-        <div class="card-columns">
-            <div class="card" ng-repeat="movie in movies | filter: { Title: movieName }">
+        <div class="card-columns mt-5">
+            <div class="card" ng-repeat="movie in movies | filter: { Title: movieName } | orderBy: 'Title'">
                 <img ng-src="{{ movie.Poster }}" class="card-img-top">
                 <div class="card-body">
                     <h3 class="card-title">{{ movie.Title }}</h3>
